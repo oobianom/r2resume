@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1573444846041.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E9789653",
+    "lastKnownWriteTime" : 1573445477,
+    "last_content_update" : 1573445477321,
+    "path" : "G:/RPP-RResume/RProfilesPackage/inst/examples/naranja/index_ifeoma.Rmd",
+    "project_path" : "index_ifeoma.Rmd",
+    "properties" : {
+        "cursorPosition" : "22,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1573345133682.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "500579285",
+    "id" : "AD4CDA68",
+    "lastKnownWriteTime" : 1573371320,
+    "last_content_update" : 1573371320254,
+    "path" : "G:/RPP-RResume/RProfilesPackage/inst/examples/limon/index_ifeoma.Rmd",
+    "project_path" : "index_ifeoma.Rmd",
+    "properties" : {
+        "cursorPosition" : "88,0",
+        "scrollLine" : "79"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

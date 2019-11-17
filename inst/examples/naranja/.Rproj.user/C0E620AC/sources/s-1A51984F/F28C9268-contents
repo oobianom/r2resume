@@ -1,0 +1,434 @@
+<script>
+function transformDIVtoTreePanel(divIDorCLASS) {
+	if($(divIDorCLASS).length){
+		var classesToggle = new Array('tocnavigation', 'closedclassul', ' li', 'closedclass', 'minmaxnav', ' ul', '', '.',' ')
+		var toggler = $(divIDorCLASS + classesToggle[2]);
+		var togglerUL = $(divIDorCLASS + classesToggle[5]);
+		var i;
+		$(divIDorCLASS).addClass(classesToggle[0]);
+		for (i = 1; i < toggler.length; i++) {
+			toggler[i].parentElement.className = classesToggle[1];
+		}
+		$(divIDorCLASS +' '+ classesToggle[7] + classesToggle[1]).prev().addClass(classesToggle[3]);
+		$(divIDorCLASS +' '+ classesToggle[7] + classesToggle[1]).first().removeClass(classesToggle[1]);
+		togglerUL[0].id = classesToggle[6];
+		$(divIDorCLASS +" ." + classesToggle[1]).prev().click(function() {
+			$(this).next().toggleClass(classesToggle[4]);
+			$(this).toggleClass(classesToggle[3]);
+			return false;
+		});
+	}
+
+}
+
+function shareCurrLink(links){
+	var links2 = window.location.pathname.split('/').slice(0, -1).join('/')+"/"+links
+	if($('ul.navbar-right a').length)
+	$('ul.navbar-right a').first().attr("href","mailto:someone@gmail.com?Subject="+escape(links2))
+	$('ul.navbar-right a').first().attr("target","_top")
+
+	  var el = document.createElement('textarea');
+	  el.value = links2;
+	  document.body.appendChild(el);
+	  el.select();
+	  document.execCommand('copy');
+	  document.body.removeChild(el);
+}
+function transferDivContents(from, to,rephtml=''){
+	if($(from).length && $(to).length){
+		var xs = $(from)
+		$(to).html(xs.html().replace('h4>','h3>'))
+		$(to+' h3').first().html(rephtml)
+		//xs.html('')
+	}
+
+}
+function addListenerForLinksInDIV(divc, linkdisplaydiv) {
+    window.selecteda = null;
+    window.selectedclass = 'selectedli';
+    $(divc + ' a').click(function() {
+        var linkhref = $(this).attr("href");
+        if ((linkhref != '#') & (selecteda != $(this))) {
+            if (selecteda != null) {
+                selecteda.removeClass(selectedclass)
+            }
+            selecteda = $(this);
+            selecteda.addClass(selectedclass);
+            openLinksInDIV(linkhref, linkdisplaydiv);
+			shareCurrLink(linkhref)
+        }
+        return false;
+    })
+    $(divc + ' a').first().trigger('click');
+}
+
+function openLinksInDIV(links, divid) {
+    $('#' + divid).attr('src', links)
+    $('#' + divid).closest('.chart-shim').css('padding', '0px')
+    $('#' + divid).closest('.chart-stage').css('padding', '0px')
+}
+
+//$_GET for javascript
+function getURLparams() {
+    var queryDict = new Array();
+	var icount = 0;
+    window.location.search.substr(1).split("&").forEach(function(item, index) {
+		if(item.split("=")[1]){
+			queryDict[icount] = item.split("=")[1]
+			icount++;
+		}
+
+    });
+    return queryDict;
+}
+
+function gotopage(links,addt=''){
+	location.href = (links+location.search+addt)
+}
+
+function sizeText(w = "smaller",e){
+ var father = $(e).parent().parent().parent().children('ul')
+ var curr_font_size = father.css('font-size').replace('px','');
+ if(w == 'smaller'){
+   father.css('font-size',(curr_font_size-2)+'px')
+ }
+ else{
+   father.css('font-size',(curr_font_size-(-2))+'px')
+ }
+ if(w == 'normal'){
+   father.css('font-size','15px')
+ }
+}
+
+function togglediv(divid){
+
+	var instDiv = $('#'+divid)
+	var currclass = instDiv.attr('class')
+	var prevclass = instDiv.attr('tclass')
+	if(!prevclass){prevclass = 'closediv'; instDiv.attr('tclass',prevclass) }
+
+	instDiv.attr('class',prevclass);
+	instDiv.attr('tclass',currclass);
+
+}
+//model comparer class and associated functions
+
+class modelComparer {
+    static doSubmitModels(thisformid = 'modelcomparerselectorform') {
+        var linktotemp, modelform, selcount;
+        modelform = $("#" + thisformid);
+        selcount = $("#" + thisformid + " input:checked").length;
+        if ((selcount > 0) && (selcount < 4)) {
+            linktotemp = 'models.html'
+        } else {
+            linktotemp = 0
+        }
+
+        if (linktotemp) {
+            modelform.attr('action', linktotemp)
+            modelform.submit()
+        } else {
+            alert("You must select between 1-3 models to compare or view");
+        }
+        return false;
+    }
+
+
+    static switchtoModels(formid) {
+        var getselectfields = $('#' + formid).find('select')
+        var getSFlength = getselectfields.length
+        var proceed = true;
+        var proceedlink = '?';
+
+        if ((getselectfields[0] == '') || (getselectfields[1] == '') || (getselectfields[2] == '')) {
+            proceed = false;
+        }
+
+        if (proceed) {
+            $('#' + formid).submit();
+        }
+
+    }
+
+    static renderSummaryStatView(modelfolder, outputDivId, filenames = '/summarystats.html') {
+        openLinksInDIV('includes/models/' + modelfolder + filenames, outputDivId);
+    }
+
+    static isModelPage() {
+        var urlFilename = location.href.substring(location.href.lastIndexOf('/') + 1).toLowerCase().search("models");
+        return (urlFilename >= 0 ? true : false)
+    }
+    static renderNMInputOutputView(ml_f, current_input, current_fld) {
+        var nm_input_files = ['ctl', 'rpt', 'ext', 'coi', 'cor', 'grd', 'phi', 'pnm', 'shk', 'xml','tbl'];
+        var model_folders = ml_f
+        var frameid = 'model' + current_fld + '_' + nm_input_files[current_input];
+        var framesrc = 'includes/models/' + model_folders[current_fld] + '/' + nm_input_files[current_input] + '.html'
+		console.log(framesrc)
+        //add listener to the iframe to perform after complete load
+        if ((current_input == (nm_input_files.length - 1)) && (current_fld == (model_folders.length - 1))) {
+
+			///////////////This section marks the end of page load for model.html////////////////////////////
+
+			//after final load following the nonmem input and output load
+			model_folders.forEach(function(item, index) {
+				$(mdl + (index+1) + '_ss .chart-title').html(modelNames[item]);
+                $(mdl + (index+1) + '_iof center').html(modelNames[item]);
+			})
+
+			//restructure tabs
+			var tabargs = '.navbar-left'
+			var nav_tab = $(tabargs).html()
+			$(tabargs).html(nav_tab+'<li><a href="javascript:gotopage(\'models_graphs.html\')">Graphs</a></li>')
+			clickFoldDiv('.chart-title')
+		}
+		else {
+            //console.log(current_input + ' ' + current_fld + ' ' + model_folders.length)
+
+            $('#' + frameid).on('load', function() {
+                if (current_fld < (model_folders.length - 1)) {
+                    current_fld++;
+                } else {
+                    current_fld = 0;
+                    current_input++;
+                }
+
+                modelComparer.renderNMInputOutputView(ml_f, current_input, current_fld)
+            })
+        }
+
+        openLinksInDIV(framesrc, frameid)
+
+    }
+}
+function clearSelections(divid){
+	$('#'+divid+' input').each(function(){$(this).removeAttr('checked');});
+
+}
+function clickFoldDiv(classorid){
+
+	$(classorid).parent().attr('prevstyle','flex:31px');
+
+	$(classorid).click(function(){
+		var curstyle = $(this).parent().attr('style')
+		var pcurstyle = $(this).parent().attr('prevstyle')
+		$(this).parent().attr('style',pcurstyle)
+		$(this).parent().attr('prevstyle',curstyle);
+	})
+}
+
+function is_defined(j){
+	if($(j).length){return true;}
+	else{return false;}
+
+}
+$(document).ready(function() {
+
+	window.modelNames = {
+		//list of models
+		"model01": "b071_poolpk2_all_parent_TOL6_IOV-Ka_eKaClV2V3.ctl",
+		"model02": "b072_all_parent_1cmp.ctl",
+		"model03": "b063_paper_fixedTheta.ctl"
+
+		};
+
+    if (modelComparer.isModelPage()) {
+
+        //call functions for model comparer page
+        var getmodelnames = getURLparams();
+        //load summary statistics
+        var cssprop = 'display';
+        var cssval = 'none';
+        window.mdl = '#model';
+		var titlep ='.chart-title';
+        var aselector = 'a[href="models_graphs.html"]';
+        var aselector2 = 'a[href="models_graphs.html"]';
+
+
+
+
+        getmodelnames.forEach(function(item, index) {
+
+            if(item)
+			{
+				modelfolderx = 'model' + index + '_sumstat_iframe';
+
+				modelComparer.renderSummaryStatView(item, modelfolderx); //populate summary stats tab
+
+				if (!index) {
+					modelComparer.renderNMInputOutputView(getmodelnames, 0, 0);//populate input output files tab
+				}
+			}
+        });
+
+        [0, 1, 2].forEach(function(i) {
+            //close any unused model container
+            if (!getmodelnames[i]) {
+                $(mdl + (i + 1) + '_ss').css(cssprop, cssval);
+                $(mdl + (i + 1) + '_gr').css(cssprop, cssval);
+                $(mdl + (i + 1) + '_iof').css(cssprop, cssval);
+
+				//check from presence of sidebar, which is only present in the graphs_models page
+				if(is_defined("#plots_sidebar")){document.getElementById("plots_sidebar").getElementsByTagName("h3")[i].innerHTML=" ";}
+            }
+			else{
+				$(mdl + (i + 1)+'_gr h3').html(modelNames[getmodelnames[i]])
+				transferDivContents('#'+getmodelnames[i]+'_graphs_links','#model'+(i + 1)+'_plots_index',(i+1))//fetch the specific contents for the navigation for each model into their respective div
+				addListenerForLinksInDIV('#model'+(i + 1)+'_plots_index', 'model'+i+'_plots')
+				transformDIVtoTreePanel('#model'+(i + 1)+'_plots_index')//make the DIVs closable
+			}
+
+        })
+
+
+
+    } else {
+        //call functions for the index page
+        //transform nav to hierarchical
+        addListenerForLinksInDIV('#firstdeck', 'deck01_iframe') //deck 01 listeners for the a tag
+        addListenerForLinksInDIV('#seconddeck', 'deck02_iframe') //deck 02 listeners for the a tag
+        addListenerForLinksInDIV('#tocnavigation', 'toc_iframe') //TOC listeners for the a tag
+        transformDIVtoTreePanel('#tocnavigation') //TOC transform ul li to tree panel
+		addListenerForLinksInDIV('#impthirddeck','deck03_iframe') //deck 03 important slides
+    }
+
+
+});
+
+</script>
+
+
+<style>
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+a:hover,a:active {
+	text-decoration:none;
+}
+
+
+.active {
+  display: block;
+}
+.tocnavigation a{
+
+}
+.tocnavigation a:before{
+content:"\f07c";
+font-family:"Font Awesome 5 Free";
+-webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-weight: 900;
+	color:plum;
+    padding-right: 15px;
+}
+
+.tocnavigation a.closedclass:before{
+	content:"\f07b";
+	font-family:"Font Awesome 5 Free";
+	-webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-weight: 900;
+color:purple;
+    padding-right: 15px;
+}
+
+.tocnavigation ul{
+list-style-type: none;
+margin: 0;
+padding-bottom: 5px;
+padding-left: 10px;
+}
+
+ul.closedclass li{
+list-style-type: none;
+display:inline;
+}
+
+ul.closedclass > lis{
+list-style-type: none;
+display:none;
+}
+.closedclassul{display:none;}
+.minmaxnav{display:block;}
+
+.maincontent .chart-stage .chart-shim {
+    padding-left: 0;
+    padding-right: 0;
+}
+.selectedli{
+	    font-weight: bold;
+}
+
+/*tables*/
+
+.maincontent .chart-stage .chart-shim table tr:nth-child(2n) {
+  background-color: #f5f5f5;
+}
+.maincontent .chart-stage .chart-shim table th {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  font-weight:bold;
+}
+.maincontent .chart-stage .chart-shim table tr {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding:10px;
+}
+
+.maincontent .chart-stage .chart-shim table {
+  border-top: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding:10px;
+}
+
+.maincontent .chart-stage .chart-shim table td {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.maincontent .chart-stage .chart-shim table tr.header {
+  border-top-width: 1px;
+  background-color: #eee;
+}
+.maincontent .chart-stage .chart-shim table tr:last-child td {
+  border-bottom-width: 1px;
+}
+
+#summary-statistics h3,#summary-statistics h4{
+	margin-top:0;
+}
+
+#model1_ss,#model2_ss,#model3_ss,
+#model1_gr,#model2_gr,#model3_gr,
+#model1_iof,#model2_iof,#model3_iof{
+
+}
+.closediv{display:none;}
+center{
+	display:block;
+	padding:5px;
+	font-weight:bold;
+
+}
+/*iframes*/
+
+iframe{
+	border-width:0px;
+}
+
+</style>
+
+

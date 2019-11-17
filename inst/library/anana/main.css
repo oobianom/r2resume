@@ -1,0 +1,37 @@
+.resume-intro {
+    padding: 0px!important;
+}
+
+.item-subtitle-medium {
+    color: #666;
+    padding-top: 3px;
+    font-weight: normal!important;
+    padding-bottom: 5px;
+}
+
+.pulication_container{
+	
+}
+.pulication_container ul{
+	list-style-type: decimal-leading-zero;
+    padding-left: 23px;
+}
+.pub_top {
+    zoom: 0.9;
+    margin-bottom: 10px;
+}
+
+.pub_top .pub_authors{
+	font-weight:bold;
+	text-align: justify;
+	display: flex;
+}
+
+.pub_top .pub_journal,.pub_top .pub_pubvol{
+	font-style: italic; 
+}
+.summary-body{
+	font-weight: bold;
+    text-align: justify;
+}
+

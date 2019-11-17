@@ -1,0 +1,32 @@
+name: "my-website"
+navbar:
+  title: "ggggggggg"
+  left:
+    - text: ""
+      href: "javascript:PLBody.normal()"
+      icon: fa-expand
+    - text: ""
+      href: "javascript:PLBody.expand()"
+      icon: fa-search-plus
+    - text: ""
+      href: "javascript:PLBody.reduce()"
+      icon: fa-search-minus
+exclude: ["*.txt", "*.csv"]
+output_dir: "../../model01"
+output:
+  html_document:
+    template: 'H:\public_html\PLGitbook\Multi_Gitbook_v1\flexdashboard_model_IFRAMES_v2\includes\models\creator\models_template.html'
+    css: style.css
+    toc: false
+    toc_depth: 6
+    keep_md: false
+    clean: TRUE
+    df_print: paged
+    number_sections: false
+    toc_float:
+      collapsed: true
+      smooth_scroll: false
+    self_contained: false
+    theme: simplex
+    lib_dir: library
+    split_by: rmd

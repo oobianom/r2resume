@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1573444427097.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "BB13913B",
+    "lastKnownWriteTime" : 1573444562,
+    "last_content_update" : 1573444562231,
+    "path" : "G:/RPP-RResume/RProfilesPackage/inst/examples/naranja/index_john.Rmd",
+    "project_path" : "index_john.Rmd",
+    "properties" : {
+        "cursorPosition" : "183,0",
+        "scrollLine" : "152"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

@@ -1,0 +1,123 @@
+--- 
+title: "Parent base model used for covariate search Stats"
+author: "Obinna Obianom, Ph.D"
+position: 'Scientist Developer'
+company: 'Cognigen Corporation, A SimulationPlus Company'
+location: "Buffalo, New York"
+email: "oobianom@umaryland.edu"
+phone: "716-446-3416"
+date: "`r Sys.Date()`"
+cover-image: ~
+theme-color: "brown"
+---
+
+Summary {data-format="summary"}
+==========================================================
+
+Self-motivated and cheerful customer service professional with 2+ years of experience helping customers navigate websites and resolving product and service issues. Eager to support BookMe in building an impeccable online reputation by providing top-class customer support. Received 98.9% positive ratings at GHI Inc. where customer retention for my regular call-ins was 25% above the company average.
+
+
+Work Experience {data-format="experience"}
+===========================================================
+
+##Postdoctoral Fellow (Advisor: Young X. Shen) {start="2013" end="Present" company="University of California, Los Angeles, CA"}
+
+Developmental regulation of NMDA receptor-mediated synaptic transmission in zebra finch brain
+ − Developed single cell PCR method to study developmental changes in NMDA receptors, correlated with developmental stages of song learning
+ − Analyzed developmental changes in juvenile song using customized LabView software.
+ − Altered development of song with behavioral and circadian manipulations
+
+##Graduate Researcher (Advisor: Thomas J. Schmidt) {start="2016" end="2013" company="Columbia University, New York, NY"}
+
+Serotonergic modulation of synaptic transmission in developing and adult Aplysia
+ − Used in vitro single cell neurophysiological recording and stimulation to study developmental emergence of two serotonin-mediated forms of synaptic plasticity
+
+##Participant, Neural Systems and Behavior course  {start="May 2008" end="June 2008" company="Marine Biological Laboratory, Woods Hole, MA"}
+
+
+
+Reports/Publication {data-format=publication}
+===========================================================
+
+```{r echo =FALSE}
+PMID <- c(31645732,31634902,31636404,31657530,31645761,31645758,31653761,31642025,31647023,31645452,31647500,27976715)
+```
+
+`r RProfilesPackage::getPublication(PMID)`
+
+Projects {data-format="project" icon=fa-folder}
+===========================================================
+
+##WNT inhibitors discovery from scratch {start="April 2016" end="May 2018" company="NSF Scholarship ($100,000)"}
+
+Research in ontology-driven semantic technology to be applied in spatially enabled knowledge management system; application domain and project ontology design; urban growth modeling using agent-based modeling and GIS; collaboration with UCSB on NGA funded research project on spatial web, networked gazetteers
+
+Projects {data-format="rightCustom" icon=fa-folder}
+===========================================================
+
+##WNT inhibitors discovery from scratch {start="April 2016" end="May 2018"}
+
+Research in ontology-driven semantic technology to be applied in spatially enabled knowledge management system; application domain and project ontology design; urban growth modeling using agent-based modeling and GIS; collaboration with UCSB on NGA funded research project on spatial web, networked gazetteers
+
+Education {data-format="education"}
+===========================================================
+
+
+## PhD in Computer Science {start="April 2016" end="May 2018" school="University of California, Santa Cruz"}
+
+## MSc in Computer Science {start="April 2014" end="May 2016" school="Columbia University, New York"}
+
+## BSc in Computer Science {start="April 2012" end="May 2014" school="University of California, Santa Cruz"}
+
+Core Skills {data-format=tags}
+===========================================================
+
+##Writing
+##Western Blot
+##Gel Electro
+##Pharmacokinetics
+
+
+Other Skills {data-format=leftCustom}
+===========================================================
+
+##Writing {rate="90%"}
+##Western Blot {rate="50%"}
+##Gel Electro {rate="40%"}
+##Pharmacokinetics {rate="40%"}
+
+##Writing{rate="90%"}
+##Western Blot{rate="90%"}
+##Gel Electro{rate="50%"}
+##Pharmacokinetics{rate="90%"}
+
+
+
+Languages {data-format=leftCustom icon=fa-language}
+===========================================================
+
+##Igbo{rate="90%"}
+##English{rate="90%"}
+##French{rate="20%"}
+##Chinese{rate="90%"}
+
+Statistics {data-format=leftCustom icon=fa-chart-bar}
+===========================================================
+
+Average Reports are the clarics
+
+For Fun {data-format=leftCustom icon=fa-chess-knight}
+===========================================================
+
+ - Climbing
+ - Shouting
+ - Finding Nemo
+ - Lieing
+
+
+Content with me {data-format="social"}
+===========================================================
+
+## github {icon="fa-github" link='http://github.com'}
+## LinkedIn {icon="fa-linkedin" link='http://linkedin.com'}
+## facebook {icon="fa-facebook" link='http://facebook.com'}

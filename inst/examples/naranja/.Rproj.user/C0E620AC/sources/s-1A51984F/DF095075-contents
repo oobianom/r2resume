@@ -1,0 +1,67 @@
+nr =9
+pref="050"
+midf="-plots-test"
+for(i in 1:nr){
+  writeLines("### SAMPLETEXT", file(paste(pref,i,midf,".Rmd",sep="")))
+}
+
+nr =15
+pref="GOF_"
+midf=""
+for(i in sprintf("%04d", 1:15)){
+  writeLines("# GOF Plots > ", file(paste(pref,i,midf,".Rmd",sep="")))
+}
+
+renderThisPage <- function(){
+  
+  print("YESSSSSSSSSS")
+  rmarkdown::html_document(css='style.css',toc='true')
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+name: "my-website"
+navbar:
+  title: ""
+left:
+  - text: ""
+href: "javascript:PLBody.normal()"
+icon: fa-expand
+- text: ""
+href: "javascript:PLBody.expand()"
+icon: fa-search-plus
+- text: ""
+href: "javascript:PLBody.reduce()"
+icon: fa-search-minus
+exclude: ["*.txt", "*.csv"]
+output_dir: "finished"
+output:
+  html_document:
+  template: 'default'
+css: style.css
+toc: false
+toc_depth: 6
+keep_md: false
+clean: TRUE
+df_print: paged
+number_sections: false
+toc_float:
+  collapsed: true
+smooth_scroll: false
+self_contained: false
+theme: simplex
+lib_dir: library
+split_by: rmd

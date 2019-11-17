@@ -1,0 +1,6 @@
+exclude: ['repo']
+output_dir: 'public_html'
+output:
+  RProfilesPackage::render:
+    template: 'resume.beta'
+

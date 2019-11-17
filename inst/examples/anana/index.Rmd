@@ -1,0 +1,177 @@
+--- 
+title: "Official CV of Temitope Ajayi"
+author: "Temitope Ajayi, PhD, MD"
+email: "idonshayo-nonexist@buffalo.edu"
+position: "Research Assistant Professor"
+affiliation: "State University of New York at Buffalo"
+address: "45 Main Street, Buffalo, NY"
+date: "`r Sys.Date()`"
+phone: "716-000-0000"
+profile-image: "myself.jpg"
+theme-custom-color: "brown"
+bg-color: "white"
+---
+
+
+Executive Summary{data-format="summary"}
+========================================
+
+Self-motivated and cheerful doctor and scientist with 2+ years of experience helping treating patients and performing cutting edge research with state of the art equipment. Other irrelevant details also include.. Eager to support BookMe in building an impeccable online reputation by providing top-class customer support. Received 98.9% positive ratings at GHI Inc. where customer retention for my regular call-ins was 25% above the company average.
+
+
+
+Research Experience {data-format="experience"}
+========================================
+
+## Postdoctoral Fellow (Advisor: Oluwa J. Adetoye) {start="2018" end="Present" affiliation="University of California, Los Angeles, CA"}
+
+Developmental regulation of NMDA receptor-mediated synaptic transmission in zebra finch brain
+ - Developed single cell PCR method to study developmental changes in NMDA receptors, correlated with developmental stages of song learning
+ - Analyzed developmental changes in juvenile song using customized LabView software.
+ - Altered development of song with behavioral and circadian manipulations
+
+## Graduate Researcher (Advisor: Obi N Obianom) {start="2013" end="2018" affiliation="SUNY University at Buffalo, Buffalo, NY"}
+
+Serotonergic modulation of synaptic transmission in developing and adult 
+ - Aplysia Used in vitro single cell neurophysiological recording and stimulation to study developmental emergence of two serotonin-mediated forms of synaptic plasticity
+
+## Participant, Neural Systems and Behavior course  {start="May 2008" end="June 2008" affiliation="Marine Biological Laboratory, Woods Hole, MA"}
+
+
+Work Experience {data-format="experience"}
+========================================
+
+## Summer Intern {start="May 2016" end="June 2016" affiliation="GenTox, Buffalo, NY"}
+
+Developmental regulation of NMDA receptor-mediated synaptic transmission in zebra finch brain
+ - Developed single cell PCR method to study developmental changes in NMDA receptors, correlated with developmental stages of song learning
+ - Analyzed developmental changes in juvenile song using customized LabView software.
+ - Altered development of song with behavioral and circadian manipulations
+
+## Designer Gene Intern {start="2013" end="2014" affiliation="DeGenX Inc, Buffalo, NY"}
+
+Serotonergic modulation of synaptic transmission in developing and adult 
+ - Aplysia Used in vitro single cell neurophysiological recording and stimulation to study developmental emergence of two serotonin-mediated forms of synaptic plasticity
+
+## Research Associate {start="2010" end="2011" affiliation="Marine Biological Laboratory, Rochester, NY"}
+
+## Secker Volunteer {start="2019" end="2010" affiliation="Mercy Twin Hospital, Williamsville, NY"}
+
+Teaching and Mentoring Experience {data-format="experience"}
+========================================
+
+## Teaching Assistant, Introduction to Structural Engineering{start=2013 end=2014 affiliation="College of Engineering, University of Illinois"}
+
+ - Prepared lectures and class activities focusing on the analysis of determinate and indeterminate structures for 15-25 freshman and sophomore level undergraduates.
+ - Created and graded course assessments to ensure students understood material and stayed on track.
+ - Recognized as List of Teachers Ranked Excellent by Their Student
+
+## Instructor, Latino/a Culture{start=2014 end=2015 affiliation="Anthropology Department, University of Illinois"}
+
+Integrated multimedia approaches and used instructional technology to enhance pedagogical approach.
+ - Explained challenging concepts using planned lessons, assignments and targeted discussions for 75 freshmen and sophomore students.s
+
+## Short Course in Molecular Biology{start=2014 end=2015 affiliation="The Graduate College, University at Buffalo"}
+
+Mentored two undergraduate students in data collection and analysis to visualize the properties of various geotechnical materials. Guided the students in preparation and presentation of research findings.
+
+
+
+Reports/Publication {data-format="publication"}
+===========================================================
+
+```{r echo =FALSE}
+PMID <- c(31645732,31634902,31636404,31657530,31645761,31645758,31653761,31642025,31647023,31645452,31647500,27976715)
+```
+
+`r r2resume::getPublication(PMID)`
+
+
+Presentations {data-format="publication"}
+========================================
+
+## r2resume: towards building elegant and beautiful resume sites. .{authors="Wenjing Li" affiliation="Experimental Biology Conference" others="12:42 Aug 12, 2016."}
+
+## ggplot2: Elegant Graphics for Data Analysis.{authors="H. Wickham." affiliation="Springer-Verlag New York" others="12:42 Aug 12, 2016."}
+
+
+
+Projects {data-format="leftCustom"}
+===========================================================
+
+## Discovery of Novel WQF Chemical Inhibitors
+
+Research in ontology-driven semantic technology to be applied in spatially enabled knowledge management system; application domain and project ontology design; urban growth modeling using agent-based modeling and GIS; collaboration with UCSB on NGA funded research project on spatial web, networked gazetteers
+
+## r2resume package
+
+An R package that transforms rmarkdown into resume website page
+
+| **Collaborating authors:** Frank Ikponmwen, Thaddeus Nnabue, Akin Oladipo
+
+Education {data-format="education"}
+========================================
+
+## PhD in Biological Sciences {start=2013 end=2018 affiliation="SUNY University at Buffalo, Buffalo, NY"}
+
+**Dissertation title**: "CRISPR mediated deletion of TLE1 in mouse and its ensuing consequences"
+**Committee**: Obas Imo, Ola Oladipo, Ikpong Dama, Obi Obianom (Chair) 
+
+## MS in Biochemistry {start=2011 end=2013 affiliation="SUNY University at Buffalo, Buffalo, NY"}
+
+## BS in Pharmaceutical Sciences {start=2006 end=2010 affiliation="SUNY University at Buffalo, Buffalo, NY"}
+
+
+My Skills {data-format="rightCustom"}
+===========================================================
+
+**Professional**
+
+ - Writing
+ - Western Blot
+ - Gel Electro
+ - Pharmacokinetics
+
+
+**Technical**
+
+ - Writing
+ - Western Blot
+ - Gel Electro
+ - Pharmacokinetics
+
+
+
+Languages {data-format="languages"}
+========================================
+
+## Igbo{level="fluent"}
+## English{level="Very good"}
+## French{level="Okay"}
+## Chinese
+
+References {data-format="references"}
+========================================
+
+## Dr. Chinelo Obianom{email=chinelo@ed.uzar.edu.za position="Assistant Professor" affiliation="University of Capetown" phone="+27138989832123"}
+
+## Dr. Onyeka Onweludumber
+
+
+
+Honors and Awards{data-format="awards"}
+========================================
+
+## John B. Award {year=2015 affiliation="National Institute of Sciences"}
+
+## C.B Travel Award{year=2016 affiliation="Experimental Biology Conference"}
+
+A travel award presented to students on a merit based case
+
+
+Content with me {data-format="social"}
+===========================================================
+
+## github {icon="fa-github" link='http://github.com'}
+## LinkedIn {icon="fa-linkedin" link='http://linkedin.com'}
+## facebook {icon="fa-facebook" link='http://facebook.com'}

@@ -1,0 +1,314 @@
+/* =======================================================================
+Template Name: B-Space Single Page Template
+Author:  SmartEye Technologies
+Author URI: www.smart-eye.in
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for web template
+
+======================================================================= */
+/* ===================================== Import Less ================================== */
+@font-face {
+  font-family: robot-slab;
+  src: url('../fonts/RobotoSlab-Regular.ttf');
+  src: url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
+}
+.blog-box1 .cdfik li {
+  float: left;
+  padding: 11.5px;
+  text-align: center;
+  font-size: 13px;
+  border-bottom: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  border-top: 1px solid #ededed;
+}
+.blog-box1 .sd-op {
+  background-color: #f58220;
+  text-align: center;
+  color: #FFF;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.blog-box1 .cdfik {
+  width: 100%;
+}
+.blog-box1 .pof-det {
+  padding: 10px;
+  padding-left: 10px;
+  padding-left: 60px;
+}
+.blog-box1 .pof-det b {
+  font-size: 13px;
+}
+.blog-box1 .pof-det p {
+  font-size: 13px;
+  text-align: justify;
+  text-indent: 20px;
+  margin-top: 5px;
+}
+.blog-box1 .sd-op b {
+  font-size: 22px;
+}
+/* ===================================== Basic CSS ================================== */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+a:hover,
+a:focus,
+input,
+textarea {
+  text-decoration: none;
+  outline: none;
+}
+.cp {
+  cursor: pointer;
+}
+p {
+  margin-bottom: 0px;
+  width: 100%;
+}
+.layy {
+  padding: 30px;
+}
+h2 {
+  width: 100%;
+}
+.no-padding {
+  padding: 0px;
+}
+.no-margin {
+  margin: 0px;
+}
+.sec-title {
+  text-align: center;
+}
+.sec-title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: none;
+  font-family: robot-slab;
+}
+.sec-title p {
+  font-size: 14px;
+}
+body {
+  background: #f4f4f4;
+  font-family: robot-slab;
+  font-size: 0.85rem;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1250px;
+}
+.social {
+  position: fixed;
+  left: 0px;
+  top: 37%;
+  width: 60px;
+  height: 120px;
+  background-color: #EAEAEA;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+}
+.social ul li {
+  list-style: none;
+  float: none;
+  font-size: 32px;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+}
+.social ul {
+  padding-left: 0px;
+}
+/* ===================================== Header Style  ================================== */
+.profile-box {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 0px;
+  background-color: #FFF;
+  float: none;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 4%;
+}
+.profile-cover .line-1 {
+  background-color: #7f298c;
+  padding: 25px;
+  margin-top: 115px;
+}
+.profile-cover .line-2 {
+  padding: 5px;
+  background-color: #7f298c;
+  margin-top: 6px;
+}
+.profile-cover .left-box {
+  padding: 40px;
+  text-align: center;
+}
+.profile-cover .left-box img {
+  width: 80%;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  padding: 5px;
+  background-color: #FDFDFD;
+  border-radius: 50%;
+  margin-top: -190px;
+}
+.profile-cover .left-box .name-det {
+  margin-top: 20px;
+}
+.profile-cover .left-box .name-det p {
+  font-size: 16px;
+}
+.profile-cover .left-box .left-title {
+  margin-top: 30px;
+}
+.profile-cover .left-box .left-title p {
+  text-align: justify;
+  font-size: 13px;
+  text-indent: 20px;
+}
+.profile-cover .left-box .left-title h3 {
+  font-size: 18px;
+  margin-bottom: 20px    ;
+}
+.profile-cover .left-box .left-title h3:after {
+  box-sizing: border-box;
+  background-color: #7f298c;
+  content: "";
+  position: absolute;
+  z-index: 100;
+  height: 4px;
+  width: 20%;
+  margin-left: 3%;
+  margin-top: 9px;
+  right: -15px;
+}
+.profile-cover .left-box .left-title h3:before {
+  box-sizing: border-box;
+  background-color: #7f298c;
+  content: "";
+  position: absolute;
+  z-index: 100;
+  height: 4px;
+  width: 20%;
+  margin-left: 3%;
+  margin-top: 9px;
+  left: 5px;
+}
+.profile-cover .left-box .contact-box i {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.profile-cover .left-box .contact-box p {
+  margin-bottom: 20px;
+}
+.profile-cover .left-box .social-lik li {
+  text-align: left;
+  padding: 8px;
+  color: #000;
+}
+.profile-cover .left-box .social-lik li i {
+  font-size: 20px;
+}
+.profile-cover .left-box .social-lik li a {
+  color: #888;
+  margin-top: -5p;
+}
+.profile-cover .left-box .profess-cover .prog-row {
+  width: 100%;
+  text-align: left;
+  padding: 8px 2px;
+}
+.profile-cover .left-box .profess-cover .prog-row div {
+  padding-right: 0px;
+}
+.profile-cover .left-box .profess-cover .progress-bar {
+  background-color: #7f298c;
+}
+.profesional-title h3:before {
+  right: 74% !important;
+  width: 17% !important;
+}
+.social-title h3:before {
+  right: 68% !important;
+  width: 20% !important;
+}
+.right-container {
+  margin-top: 50px;
+  border-left: 3px solid #7f298c;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.right-container .right-title .icob i {
+  font-size: 32px;
+  margin-top: 6px;
+  color: #7f298c;
+}
+.right-container .right-title .titb h2 {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #7f298c;
+  font-size: 23px;
+  color: #7f298c;
+}
+.right-container .study-list li {
+  padding: 10px 0px;
+}
+.right-container .study-list li h4 {
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+.right-container .study-list li p,
+.exp_body {
+  font-size: 13px;
+}
+.right-container .add-left {
+  text-align: left;
+  margin-top: 20px;
+}
+.right-container .add-left li {
+  padding: 4px;
+}
+@media screen and (max-width: 450px) {
+  .container-fluid {
+    padding: 5px;
+  }
+  .titb h2 {
+    font-size: 18px !important;
+  }
+}
+
+.line-block{
+	margin-top: 10px;
+    font-size: 14px;
+}
+
+.exp_body .line-block {
+    font-size: 13px!important;
+}
+
+.tags {
+    background-color: brown;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 10px;
+	margin: 1px!important;
+}
+
+.tags_parent{
+	padding:0px!important;
+}

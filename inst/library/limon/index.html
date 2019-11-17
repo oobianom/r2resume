@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+$if(pagetitle)$<title>$pagetitle$</title>$endif$
+<meta name="keywords" content="R personal profiles, $keywords$" />
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="site_libs/RPPkg-1.0/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="site_libs/RPPkg-1.0/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="site_libs/RPPkg-1.0/assets/plugins/sticky/css/slick.html">
+    <link rel="stylesheet" href="site_libs/RPPkg-1.0/assets/plugins/sticky/css/slick-theme.html">
+    <link rel="stylesheet" href="site_libs/RPPkg-1.0/assets/plugins/testimonial/css/owl.carousel.min.html">
+    <link rel="stylesheet" href="site_libs/RPPkg-1.0/assets/plugins/testimonial/css/owl.theme.min.html">
+    <link rel="stylesheet" href="site_libs/RPPkg-1.0/assets/css/style.css">
+
+
+<style>
+body{
+$if(bg-color)$
+background-color: $bg-color$!important;
+$endif$
+}
+
+$if(theme-custom-color)$
+.right-container .right-title .icob i,
+.right-container .right-title .titb h2,a{
+    color: $theme-custom-color$!important;
+}
+
+.w3-tag {
+	color: $theme-custom-color$!important;
+	background-color: #fff!important;
+}
+
+.resume-header,.badge-primary,
+.theme-progress-bar-dark,
+.profile-cover .left-box .left-title h3:after{
+	background-color: $theme-custom-color$!important;
+	color: #fff!important;
+}
+
+.right-container .right-title .titb h2 {
+    border-bottom: 3px solid $theme-custom-color$!important;
+}
+.right-container{
+	border-left: 3px solid $theme-custom-color$!important;
+}
+.profile-cover .line-2,
+.profile-cover .line-1,
+.profile-cover .left-box .left-title h3:before,
+.profile-cover .left-box .profess-cover .progress-bar,
+.tags {
+    background-color: $theme-custom-color$!important;
+}
+.pulication_container ul > li:before {
+	border: 5px solid $theme-custom-color$!important;
+}
+$endif$
+</style>
+
+</head>
+
+
+
+<body>
+
+    <div id="home" class="container-fluid">
+
+        <!--  ************************* Header Starts Here ************************** -->
+             
+           <div class="container-fluid">
+              <div class="container">
+                  <div class="row">
+                       <div class="col-xl-10 col-lg-11 col-md-12 profile-box">
+                            <div class="profile-cover">
+                                <div class="line-1"></div>
+                                <div class="line-2"></div>
+                                <div class="prifile-image row">
+                                    <div class=" col-md-12 col-lg-4 left-box">
+                                        <img src="$if(profile-image)$$profile-image$$else$site_libs/RPPkg-1.0/assets/images/profile.png$endif$" alt="">
+                                        
+                                        <div class="name-det">
+                                            <h2>$if(author)$$author$$else$UNNAMED AUTHOR, MBA$endif$</h2>
+                                            <p>$if(position)$$position$$else$Chemical Biologist$endif$$if(affiliation)$, <b>$affiliation$</b>$endif$</p>
+                                        </div>
+                                        
+                                        <div class="summary-section">
+                                        </div>                                  
+										
+                                        <div class="left-title social-title">
+                                            <h3> Contact Links</h3>
+                                        </div>
+                                        
+                                        <ul class="social-lik">
+										
+											$if(phone)$<li><i class="fas fa-phone-volume">&nbsp;</i> <a>$phone$</a> </li>$endif$
+                                            $if(email)$<li><i class="fas fa-envelope">&nbsp;</i> <a>$email$</a> </li>$endif$
+                                            $if(address)$<li><i class="fas fa-map-marker-alt">&nbsp;</i> <a>$address$</a> </li>$endif$
+											$if(website)$<li><i class="fas fa-globe">&nbsp;</i> <a>$website$</a> </li>$endif$
+											
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-8 col-md-12">
+                                       <div class="right-container">  </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+              </div>
+               
+           </div>                                                                                                                                
+                                                                            
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+        
+        </div>
+ <div id='primary_body_container' style='display:none'>$body$</div>
+</body>
+
+
+</html>

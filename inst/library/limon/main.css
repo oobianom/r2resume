@@ -1,0 +1,152 @@
+.w3-display-container {
+    margin-bottom: 25px;
+}
+
+
+.item-subtitle-medium {
+    padding-top: 3px;
+    font-weight: normal!important;
+    padding-bottom: 5px;
+}
+
+.pulication_container{
+	padding-right: 0px;
+}
+.pulication_container ul{
+	list-style-type: decimal-leading-zero;
+    padding-right: 0px;
+}
+.pub_top {
+    margin-bottom: 10px;
+}
+
+.pub_top .pub_authors{
+	font-weight:600;
+	text-align: justify;
+	display: flex;
+	zoom: 1.1;
+}
+
+.pub_top .pub_journal,.pub_top .pub_pubvul{
+	font-style: italic; 
+}
+
+.pulication_container ul {
+	counter-reset:li; /* Initiate a counter */
+	margin-left:0; /* Remove the default left margin */
+	padding-left:0; /* Remove the default left padding */
+	
+}
+.pulication_container ul > li {
+    position: relative;
+    padding: 0px;
+    list-style: none;
+    background: #fff;
+    display: flex;
+	margin-bottom:10px;
+	padding-left: 55px;
+}
+.pulication_container ul > li:before {
+    content: counter(li);
+    counter-increment: li;
+    top: 4px;
+    left: 0vw;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 2.5em;
+    margin-right: 8px;
+    border: 5px solid blue;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    position: absolute;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 2.4em;
+}
+.pulication_containerli ul,
+.pulication_containerli ul {margin-top:6px;}
+.pulication_container ul ul li:last-child {margin-bottom:0;}
+.summary1 {
+    padding-top: 30px!important;
+    padding-bottom: 30px!important;
+}
+
+.sidebar-wrapper .profile {
+    max-width:100%;
+}
+
+.sidebar-wrapper .profile-container {
+    padding: 0px!important;
+	padding-bottom:30px!important;
+}
+
+.main-wrapper {
+    padding: 50px!important;
+    padding-right: 350px!important;
+}
+
+.sidebar-wrapper {
+    width: 300px!important;
+}
+
+.w3-tag {
+    color: #4CAC9D;
+	margin: 3px!important;
+    background-color: #fff;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    
+}
+.skillset{
+	margin-top:20px;
+}
+
+.wrapper {
+    margin-bottom: 50px!important;
+}
+
+.sidebar-wrapper .container-block {
+    padding-bottom: 0px!important;
+}
+
+@media (min-width: 992px)
+.skillset .level-title {
+    width: 50%!important;
+}
+.resume-timeline-in{
+	padding-left: 2rem;
+}
+
+.resume-section-content {
+    text-align: justify!important;
+}
+.exp_body{
+	display:block;
+	padding:10px 0px;
+}
+.exp_body ul{
+	padding-left: 18px;
+}
+.exp_body ul * {
+    list-style-type: circle;
+}
+.fa-trophy:before {
+    left: -29px!important;
+    position: absolute!important;
+    top: 4px!important;
+}
+
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 105%!important;
+    font-weight: 500!important;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;

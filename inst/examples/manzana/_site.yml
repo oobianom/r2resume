@@ -1,0 +1,6 @@
+exclude: ['repo']
+output_dir: 'site'
+output:
+  r2resume::generate:
+    template: 'manzana'
+

@@ -1,0 +1,372 @@
+<div align="center">
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='border-collapse:collapse;border:none'>
+ 
+ <tr>
+  <td width="36%" rowspan=2 valign=bottom style='width:36.8%;border:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableHeadingLeft>Parameter</p>
+  </td>
+  <td width="31%" colspan=2 valign=bottom style='width:31.46%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableHeadingLeft>Final Parameter Estimate</p>
+  </td>
+  <td width="31%" colspan=2 valign=bottom style='width:31.72%;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableHeadingLeft>Magnitude of Interindividual Variability</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="17%" valign=bottom style='width:17.24%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableHeadingLeft>Population Mean</p>
+  </td>
+  <td width="14%" valign=bottom style='width:14.22%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableHeadingLeft>%RSE</p>
+  </td>
+  <td width="18%" valign=bottom style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableHeadingLeft>Final Estimate</p>
+  </td>
+  <td width="13%" valign=bottom style='width:13.46%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableHeadingLeft>%RSE</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="36%" valign=top style='width:36.8%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>KA: Absorption Rate (1/h)</p>
+  </td>
+  <td width="19%" valign=top style='width:19.28%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>2.6</p>
+  </td>
+  <td width="12%" valign=top style='width:12.18%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>25</p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>92 %CV</p>
+  </td>
+  <td width="13%" valign=top style='width:13.48%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>62</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="36%" valign=top style='width:36.8%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>CL: Clearance (L/h)</p>
+  </td>
+  <td width="19%" valign=top style='width:19.28%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>33</p>
+  </td>
+  <td width="12%" valign=top style='width:12.18%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>6.1</p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>41 %CV</p>
+  </td>
+  <td width="13%" valign=top style='width:13.48%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>30</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="36%" valign=top style='width:36.8%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>V2: Central Volume (L)</p>
+  </td>
+  <td width="19%" valign=top style='width:19.28%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>170</p>
+  </td>
+  <td width="12%" valign=top style='width:12.18%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>5.7</p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>22 %CV</p>
+  </td>
+  <td width="13%" valign=top style='width:13.48%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>50</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="36%" valign=top style='width:36.8%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>Q: Intercomp. Clearance (L/h)</p>
+  </td>
+  <td width="19%" valign=top style='width:19.28%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>11</p>
+  </td>
+  <td width="12%" valign=top style='width:12.18%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>18</p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>NE</p>
+  </td>
+  <td width="13%" valign=top style='width:13.48%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>NA</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="36%" valign=top style='width:36.8%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>V3: Peripheral Volume (L)</p>
+  </td>
+  <td width="19%" valign=top style='width:19.28%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>330</p>
+  </td>
+  <td width="12%" valign=top style='width:12.18%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>43</p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>98 %CV</p>
+  </td>
+  <td width="13%" valign=top style='width:13.48%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>72</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="36%" valign=top style='width:36.8%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>KAfed: KA fed (1/h)</p>
+  </td>
+  <td width="19%" valign=top style='width:19.28%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>0.15</p>
+  </td>
+  <td width="12%" valign=top style='width:12.18%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>36</p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>NE</p>
+  </td>
+  <td width="13%" valign=top style='width:13.48%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>NA</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="36%" valign=top style='width:36.8%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>ALAG1: Lag Time (h)</p>
+  </td>
+  <td width="19%" valign=top style='width:19.28%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>0.36</p>
+  </td>
+  <td width="12%" valign=top style='width:12.18%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>8.1</p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>NE</p>
+  </td>
+  <td width="13%" valign=top style='width:13.48%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>NA</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="36%" valign=top style='width:36.8%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>IOV1 on KA</p>
+  </td>
+  <td width="19%" valign=top style='width:19.28%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>NA</p>
+  </td>
+  <td width="12%" valign=top style='width:12.18%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>NA</p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>100 %CV</p>
+  </td>
+  <td width="13%" valign=top style='width:13.48%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>34</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="36%" valign=top style='width:36.8%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>IOV2 on KA</p>
+  </td>
+  <td width="19%" valign=top style='width:19.28%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>NA</p>
+  </td>
+  <td width="12%" valign=top style='width:12.18%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>NA</p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>100 %CV</p>
+  </td>
+  <td width="13%" valign=top style='width:13.48%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>SAME</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="36%" valign=top style='width:36.8%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>IOV3 on KA</p>
+  </td>
+  <td width="19%" valign=top style='width:19.28%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>NA</p>
+  </td>
+  <td width="12%" valign=top style='width:12.18%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>NA</p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>100 %CV</p>
+  </td>
+  <td width="13%" valign=top style='width:13.48%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>SAME</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="36%" valign=top style='width:36.8%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>IOV4 on KA</p>
+  </td>
+  <td width="19%" valign=top style='width:19.28%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>NA</p>
+  </td>
+  <td width="12%" valign=top style='width:12.18%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>NA</p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>100 %CV</p>
+  </td>
+  <td width="13%" valign=top style='width:13.48%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>SAME</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="36%" valign=top style='width:36.8%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>RV parent</p>
+  </td>
+  <td width="19%" valign=top style='width:19.28%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>0.097</p>
+  </td>
+  <td width="12%" valign=top style='width:12.18%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>19</p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>31 %CV</p>
+  </td>
+  <td width="13%" valign=top style='width:13.48%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableTextLeft>NA</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" colspan=5 valign=top style='width:100.0%;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableText align=left style='text-align:left'>Minimum value of the
+  objective function = 1803.304</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="100%" colspan=5 valign=top style='width:100.0%;border:none;
+  padding:0in 5.75pt 0in 5.75pt'>
+  <p class=TableNote style='margin-top:3.0pt'>Abbreviations: %RSE, relative
+  standard error expressed as a percent; %CV, coefficient of variation
+  expressed as a percent; SD, standard deviation; NA, not applicable; NE, not
+  estimated.</p>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+</div>

@@ -1,0 +1,15 @@
+```{r echo = FALSE}
+filn = "downloaded/model_01_03/b072_all_parent_1cmp.tbl"
+tblTable <<- read.table(filn,skip=1,header = T,colClasses = "character")
+
+library(knitr)
+
+if(as.integer(file.size(filn)/1048576)<1){
+   kable(tblTable)
+}else{
+  kable(tblTable[1:10,])
+}
+
+```
+
+When the file is greater that 1MB, only a 10 rows are show. To view the entire file please download it

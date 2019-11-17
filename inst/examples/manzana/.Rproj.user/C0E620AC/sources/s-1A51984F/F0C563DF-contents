@@ -1,0 +1,69 @@
+---
+title: "KIWI-PM"
+output: 
+  flexdashboard::flex_dashboard:
+    self_contained: FALSE
+    mathjax: null
+    orientation: columns
+    vertical_layout: fill
+    favicon: "includes/img/favicon.png"
+    css: "includes/css/styles.css"
+    includes: 
+      after_body: config.file
+    navbar:
+      - { title: "Share", href: "#", align: right, icon: 'fa-share'}
+      - { title: "", href: "#", align: right, icon: 'fa-search'}
+---
+
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+<!--START Include all decks from corresponding deck files-->
+`r deckfiles<-c('includes/agenda/creator/deck1/index.Rmd','includes/agenda/creator/deck2/index.Rmd','includes/agenda/important/index.Rmd')`
+
+```{r, child = deckfiles}
+```
+
+<!--END Include all decks from corresponding deck files-->
+
+
+Table of Contents
+========================================================================
+
+Page 1{data-width=150}
+-----------------------------------------
+
+
+<!--START Include Table of content file-->
+
+```{r, child = 'toc.Rmd'}
+```
+
+<!--END Include Table of content file-->   
+
+     
+Page 2 {.maintoccontent .maincontent}
+-----------------------------------------------     
+
+### 
+
+<iframe id='toc_iframe' width='100%' height='100%' border='0' src='includes/agenda/outline.html'></iframe>
+
+
+Model Comparer
+========================================================================
+
+Column
+-----------------------------------------------------------------------
+
+
+<!--START Include model comparer list file-->
+
+```{r, child = 'comparer.Rmd'}
+```
+
+<!--END Include model comparer list file-->   
+
+

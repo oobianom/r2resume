@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1572844426391.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1497320437",
+    "id" : "282A95C2",
+    "lastKnownWriteTime" : 1573371280,
+    "last_content_update" : 1573371280288,
+    "path" : "G:/RPP-RResume/RProfilesPackage/inst/examples/limon/index.Rmd",
+    "project_path" : "index.Rmd",
+    "properties" : {
+        "cursorPosition" : "202,0",
+        "scrollLine" : "171"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

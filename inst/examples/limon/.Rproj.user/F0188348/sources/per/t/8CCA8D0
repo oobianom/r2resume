@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1573371431159.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1286323283",
+    "id" : "8CCA8D0",
+    "lastKnownWriteTime" : 1573371466,
+    "last_content_update" : 1573371466971,
+    "path" : "G:/RPP-RResume/RProfilesPackage/inst/examples/limon/index_john.Rmd",
+    "project_path" : "index_john.Rmd",
+    "properties" : {
+        "cursorPosition" : "14,40",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

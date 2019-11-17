@@ -1,0 +1,130 @@
+---
+title: "KIWI-PM (**model viewer**)"
+output: 
+  flexdashboard::flex_dashboard:
+    self_contained: FALSE
+    mathjax: null
+    orientation: columns
+    vertical_layout: fill
+    favicon: "includes/img/favicon.png"
+    css: "includes/css/styles.css"
+    includes: 
+      after_body: config.file
+    navbar:
+      - { title: "Back to agenda", href: "index.html", align: right, icon: 'fa-undo' }
+      
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+Summary Statistics
+========================================================================
+
+Column
+-----------------------------------------
+
+### <img height='20' style='float:left' src='https://loading.io/spinners/polar/index.nightingale-polar-chart-loading-icon.svg'> **Still loading, please wait...** {#model1_ss}
+
+<iframe id='model0_sumstat_iframe' width='100%' height='100%' border='0'></iframe>
+
+### Model 2 {#model2_ss}
+
+<iframe id='model1_sumstat_iframe' width='100%' height='100%' border='0'></iframe>
+
+### Model 3 {#model3_ss}
+
+<iframe id='model2_sumstat_iframe' width='100%' height='100%' border='0'></iframe>
+
+
+
+NONMEM Files
+========================================================================
+
+Column {.tabset #model1_iof}
+-----------------------------------------------------------------------
+
+<center><img height='20' style='float:left' src='https://loading.io/spinners/polar/index.nightingale-polar-chart-loading-icon.svg'> Still loading, please wait...</center>
+
+### rpt 
+<iframe id='model0_rpt' width='100%' height='100%' border='0'></iframe>
+### ctl 
+<iframe id='model0_ctl' width='100%' height='100%' border='0'></iframe>
+### ext
+<iframe id='model0_ext' width='100%' height='100%' border='0'></iframe>
+### coi
+<iframe id='model0_coi' width='100%' height='100%' border='0'></iframe>
+### cor
+<iframe id='model0_cor' width='100%' height='100%' border='0'></iframe>
+### grd
+<iframe id='model0_grd' width='100%' height='100%' border='0'></iframe>
+### phi
+<iframe id='model0_phi' width='100%' height='100%' border='0'></iframe>
+### pnm
+<iframe id='model0_pnm' width='100%' height='100%' border='0'></iframe>
+### shk
+<iframe id='model0_shk' width='100%' height='100%' border='0'></iframe>
+### tbl
+<iframe id='model0_tbl' width='100%' height='100%' border='0'></iframe>
+### xml
+<iframe id='model0_xml' width='100%' height='100%' border='0'></iframe>
+
+
+Column {.tabset #model2_iof}
+-----------------------------------------------------------------------
+
+<center>Model 2 <img height='30' src='https://loading.io/spinners/wave/index.wave-ball-preloader.svg'></center>
+### rpt 
+<iframe id='model1_rpt' width='100%' height='100%' border='0'></iframe>
+### ctl 
+<iframe id='model1_ctl' width='100%' height='100%' border='0'></iframe>
+### ext
+<iframe id='model1_ext' width='100%' height='100%' border='0'></iframe>
+### coi
+<iframe id='model1_coi' width='100%' height='100%' border='0'></iframe>
+### cor
+<iframe id='model1_cor' width='100%' height='100%' border='0'></iframe>
+### grd
+<iframe id='model1_grd' width='100%' height='100%' border='0'></iframe>
+### phi
+<iframe id='model1_phi' width='100%' height='100%' border='0'></iframe>
+### pnm
+<iframe id='model1_pnm' width='100%' height='100%' border='0'></iframe>
+### shk
+<iframe id='model1_shk' width='100%' height='100%' border='0'></iframe>
+### tbl
+<iframe id='model1_tbl' width='100%' height='100%' border='0'></iframe>
+### xml
+<iframe id='model1_xml' width='100%' height='100%' border='0'></iframe>
+
+
+Column {.tabset #model3_iof}
+-----------------------------------------------------------------------
+ 
+<center>Model 3 <img height='30' src='https://loading.io/spinners/wave/index.wave-ball-preloader.svg'></center>
+### rpt 
+<iframe id='model2_rpt' width='100%' height='100%' border='0'></iframe>
+### ctl 
+<iframe id='model2_ctl' width='100%' height='100%' border='0'></iframe>
+### ext
+<iframe id='model2_ext' width='100%' height='100%' border='0'></iframe>
+### coi
+<iframe id='model2_coi' width='100%' height='100%' border='0'></iframe>
+### cor
+<iframe id='model2_cor' width='100%' height='100%' border='0'></iframe>
+### grd
+<iframe id='model2_grd' width='100%' height='100%' border='0'></iframe>
+### phi
+<iframe id='model2_phi' width='100%' height='100%' border='0'></iframe>
+### pnm
+<iframe id='model2_pnm' width='100%' height='100%' border='0'></iframe>
+### shk
+<iframe id='model2_shk' width='100%' height='100%' border='0'></iframe>
+### tbl
+<iframe id='model2_tbl' width='100%' height='100%' border='0'></iframe>
+### xml
+<iframe id='model2_xml' width='100%' height='100%' border='0'></iframe>
+
+
+

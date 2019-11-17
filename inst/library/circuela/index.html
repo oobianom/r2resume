@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+$if(pagetitle)$<title>$pagetitle$</title>$endif$
+<meta name="keywords" content="R personal profiles, $keywords$" />
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+<link rel="stylesheet" href="site_libs/RPPkg-1.0/inc/main.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<style>
+
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.w3-text-black h2{background-color:#fff;padding:5px 10px;}
+
+
+$if(theme-custom-color)$
+.w3-text-teal, .w3-hover-text-teal:hover
+{
+	color: $theme-custom-color$!important;
+}
+.w3-teal, .w3-hover-teal:hover,
+.pulication_container ul > li:before {
+    color: #fff!important;
+    background-color: $theme-custom-color$!important;
+}
+$endif$
+
+
+</style>
+<body class="w3-light-grey" style="$if(bg-color)$background-color:$bg-color$!important;$endif$">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="$if(profile-image)$$profile-image$$else$site_libs/RPPkg-1.0/inc/myself.jpg$endif$" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>$if(author)$$author$$else$UNNAMED AUTHOR, MBA$endif$</h2>
+          </div>
+        </div>
+        <div class="w3-container w3-third-main">				
+          $if(position)$<p><i class="fa fa-id-badge fa-fw w3-margin-right w3-large w3-text-teal"></i>$position$</p>$endif$
+		  $if(affiliation)$<p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>$affiliation$</p>$endif$          
+          $if(email)$<p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>$email$</p>$endif$
+          $if(phone)$<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>$phone$</p>$endif$
+		  $if(website)$<p><i class="fa fa-globe fa-fw w3-margin-right w3-large w3-text-teal"></i>$website$</p>$endif$
+		  $if(address)$<p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>$address$</p>$endif$
+		  $if(date)$<p><i class="fa fa-calendar fa-fw w3-margin-right w3-large w3-text-teal"></i>$date$</p>$endif$
+          <hr>
+        </div>
+      </div><br> 
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-footer w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+</footer>
+<div id='primary_body_container' style='display:none'>$body$</div>
+</body>
+</html>

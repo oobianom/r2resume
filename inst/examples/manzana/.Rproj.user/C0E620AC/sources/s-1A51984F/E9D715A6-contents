@@ -1,0 +1,56 @@
+---
+title: "Untitled"
+betty: "WOOOWP bettrere!!!"
+output:
+  html_document:
+    number_sections: true
+    smart: true
+    self_contained: false
+    keep_md: TRUE
+    pandoc_args: ["--lua-filter","_extra.lua"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. _Markdown___ is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+$$x_{1,2} = {-b\pm\sqrt{b^2 - 4ac} \over 2a}.$$
+$$T^{\mu\nu}=\begin{pmatrix}
+\varepsilon&0&0&0\\
+0&\varepsilon/3&0&0\\
+0&0&\varepsilon/3&0\\
+0&0&0&\varepsilon/3
+\end{pmatrix},$$
+
+
+
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+: \$betty\$
+
+```{r cars}
+summary(cars)
+
+
+f1=c("<b>dfdfjdfkjdf</b>","<p>dsdsds</p>")
+
+f1
+```
+
+## Including Plots
+![dd](C:\Users\oobianom\Downloads\first_files\xpt-Delta_dCL_plot_001.png)
+
+> KDSFDKDSK FOOD
+
+`r f1='<b>I am obi</b>'; f1 `
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+$if(pagetitle)$<title>$pagetitle$</title>$endif$
+<meta name="keywords" content="R personal profiles, $keywords$" />
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+<style>
+
+$if(theme-custom-color)$
+.wrapper {
+	background: $theme-custom-color$!important;
+}
+
+.main-wrapper .section-title,
+.pulication_container ul a,
+.main-wrapper .section-title .icon-holder {
+	color: $theme-custom-color$!important;
+}
+
+.w3-tag {
+	color: $theme-custom-color$!important;
+	background-color: #fff!important;
+}
+
+.sidebar-wrapper,
+.skillset .theme-progress-bar,
+.main-wrapper .section-title .icon-holder,
+.pulication_container ul>li:before {
+	background-color: $theme-custom-color$!important;
+	color: #fff!important;
+}
+
+$endif$
+
+.xtd, .xhd td{
+padding:5px 0;
+}
+.xhd tr{
+vertical-align: top;
+}
+
+</style>
+<link rel="shortcut icon" href="favicon.ico">  
+<!-- Google Font -->
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- FontAwesome JS -->
+<script defer src="site_libs/RPPkg-1.0/assets/js/all.js" ></script>
+<!-- Global CSS -->
+<link rel="stylesheet" href="site_libs/RPPkg-1.0/assets/plugins/bootstrap/css/bootstrap.min.css">   
+<!-- Theme CSS -->  
+<link rel="stylesheet" href="site_libs/RPPkg-1.0/assets/css/orbit-2.css">
+</head> 
+
+<body style="$if(bg-color)$background-color: $bg-color$;$endif$">
+    <div class="wrapper">
+        <div class="sidebar-wrapper">
+            <div class="profile-container">
+                <img class="profile" src="$if(profile-image)$$profile-image$$else$site_libs/RPPkg-1.0/assets/images/profile.png$endif$" alt="" />
+                <h1 class="name"><h2>$if(author)$$author$$else$UNNAMED AUTHOR, MBA$endif$</h2></h1>
+                <h3 class="tagline"><h2>$if(position)$$position$$else$Chemical Biologist$endif$</h2></h3>
+            </div><!--//profile-container-->
+            
+            <div class="contact-container container-block">
+                <table class="list-unstyled contact-list xhd" width='100%'>
+				
+			  $if(affiliation)$<tr width="100%"><td width="25"><i class="fa fa-briefcase">&nbsp;</i></td><td class="company"><b>$affiliation$</b></td></tr>$endif$			  
+			  $if(email)$<tr width="100%"><td width="25"><i class="fas fa-envelope">&nbsp;</i></td><td class="email">$email$</td></tr>$endif$
+			  $if(phone)$<tr width="100%"><td width="25"><i class="fas fa-phone">&nbsp;</i></td><td class="phone"><a href="tel:$phone$">$phone$</a></td></tr>$endif$
+			  $if(address)$<tr width="100%"><td width="25"><i class="fas fa-dot-circle">&nbsp;</i></td><td class="location">$address$</td></tr>$endif$
+			  $if(website)$<tr width="100%"><td width="25"><i class="fas fa-globe">&nbsp;</i></td><td class="website"><a href="$website$" target="_blank">$website$</a></td></tr>$endif$
+                </table>
+            </div><!--//contact-container-->
+        </div><!--//sidebar-wrapper-->
+        
+        <div class="main-wrapper"></div><!--//main-body-->
+    </div>
+ 
+	<div id='primary_body_container' style='display:none'>$body$</div>
+        
+</body>
+</html> 
+

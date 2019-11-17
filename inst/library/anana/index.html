@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+$if(pagetitle)$<title>$pagetitle$</title>$endif$
+<meta name="keywords" content="R personal profiles, $keywords$" />
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+<link rel="shortcut icon" href="site_libs/RPPkg-1.0/favicon.ico"> 
+<!-- FontAwesome JS-->
+<script defer src="site_libs/RPPkg-1.0/assets/js/all.js"></script>
+<!-- Theme CSS -->  
+<link  href="site_libs/RPPkg-1.0/assets/css/devresume.css" rel="stylesheet">
+
+<style>
+$if(theme-custom-color)$
+.resume-name,.resume-section-heading,a:hover,a{
+	color: $theme-custom-color$;
+}
+.resume-section-heading:before {
+	background-color: $theme-custom-color$;
+}
+$endif$
+
+$if(bg-color)$
+body{
+	background-color:$bg-color$;
+}
+$endif$
+</style>
+</head> 
+
+<body>
+	
+	<div class="main-wrapper">
+		<div class="container px-3 px-lg-5">
+			<article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg" style="background-color: #fff;">
+				
+				<div class="resume-header">
+					<div class="row align-items-center">
+						<div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
+							<h2 class="resume-name mb-0">$if(author)$$author$$else$UNNAMED AUTHOR, MBA$endif$</h2>
+							<div class="resume-tagline mb-3 mb-md-0">$if(position)$$position$$endif$$if(affiliation)$, <b>$affiliation$</b>$endif$</div>
+						</div><!--//resume-title-->
+						<div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
+							<ul class="list-unstyled mb-0">
+								$if(phone)$<li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg mr-2 "></i><a class="resume-link" href="tel:#">$phone$</a></li>$endif$
+								$if(email)$<li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg mr-2"></i>$email$</li>$endif$
+								$if(website)$<li class="mb-2"><i class="fas fa-globe fa-fw fa-lg mr-2"></i><a class="resume-link" href="#">$website$</a></li>$endif$						
+								$if(address)$<li class="mb-2"><i class="fas fa-map-marker-alt fa-fw fa-lg mr-2"></i>$address$</li>$endif$
+								$if(date)$<li class="mb-2"><i class="fas fa-calendar fa-fw fa-lg mr-2"></i>$date$</li>$endif$
+							</ul>
+						</div><!--//resume-contact-->
+					</div><!--//row-->
+					
+				</div><!--//resume-header-->
+				<hr>
+				<div class="resume-intro py-3">
+					<div class="summary-body media flex-column flex-md-row align-items-center">
+						<!--//media-summary-->
+						$if(profile-image)$<img class="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto" src="$profile-image$" alt="image">$endif$						
+					</div>
+				</div><!--//resume-intro-->
+				<div class="resume-body">
+					<div class="row">
+						<div class="resume-main col-12 col-lg-8 col-xl-9 pr-0 pr-lg-5"></div><!--//resume-main-->
+						<aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4"></aside><!--//resume-aside-->
+					</div><!--//row-->
+				</div><!--//resume-body-->
+						<div class="footer-body"></div><!--//resume-footer-->
+					</article>
+					<div id='primary_body_container' style='display:none'>$body$</div>
+				</div><!--//container-->
+			</div><!--//main-wrapper-->
+			
+
+</body>
+</html> 
+

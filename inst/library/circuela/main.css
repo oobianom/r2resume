@@ -1,0 +1,76 @@
+body{
+visibility:hidden;	
+}
+
+.w3-display-container {
+    margin-bottom: 25px;
+}
+
+
+.item-subtitle-medium {
+    padding-top: 3px;
+    font-weight: normal!important;
+    padding-bottom: 5px;
+}
+
+.pulication_container{
+	padding-right: 40px;
+}
+.pulication_container ul{
+	list-style-type: decimal-leading-zero;
+    padding-right: 30px;
+}
+.pub_top {
+    margin-bottom: 10px;
+}
+
+.pub_top .pub_authors{
+	font-weight:600;
+	text-align: justify;
+	display: flex;
+}
+
+.pub_top .pub_journal,.pub_top .pub_pubvul{
+	font-style: italic; 
+}
+
+.pulication_container ul {
+	counter-reset:li; /* Initiate a counter */
+	margin-left:0; /* Remove the default left margin */
+	padding-left:0; /* Remove the default left padding */
+	
+}
+.pulication_container ul > li {
+    position: relative;
+    padding: 4px 8px;
+    list-style: none;
+    background: #f7f7f7;
+    display: flex;
+	margin-bottom:10px;
+}
+.pulication_container ul > li:before {
+	content:counter(li); /* Use the counter as content */
+	counter-increment:li; /* Increment the counter by 1 */
+	/* Position and style the number */
+	top:-2px;
+	left:-2em;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	width:2em;
+	/* Some space between the number and the content in browsers that support
+	   generated content but not positioning it (Camino 2 is one example) */
+	margin-right:8px;
+	padding:6px;
+	background:#009688;
+	font-weight:buld;
+	text-align:center;
+	color: #fff;
+}
+.pulication_containerli ul,
+.pulication_containerli ul {margin-top:6px;}
+.pulication_container ul ul li:last-child {margin-bottom:0;}
+.summary1 {
+    padding-top: 30px!important;
+    padding-bottom: 30px!important;
+}

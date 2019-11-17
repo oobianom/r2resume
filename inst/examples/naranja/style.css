@@ -1,0 +1,52 @@
+h1, .h1, h2, .h2, h3, .h3 {
+}
+#body-main{
+  zoom:1;
+  padding-top: 50px;
+}
+
+.container {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: contents;
+}
+table{
+      color: #000;
+}
+
+
+/*override styles to inhibit collapse of navigation*/
+
+.navbar-header{
+  display:none;
+}
+
+.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+.navbar-nav {
+    float: left;
+    margin: 0;
+}
+
+
+.navbar-nav>li {
+    float: left;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+}
+
+.collapse {
+    display: block;
+}

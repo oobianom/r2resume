@@ -1,0 +1,106 @@
+---
+title: "KIWI-PM (model viewer)"
+output: 
+  flexdashboard::flex_dashboard:
+    self_contained: FALSE
+    mathjax: null
+    orientation: columns
+    vertical_layout: fill
+    favicon: "includes/img/favicon.png"
+    css: "includes/css/styles.css"
+    includes: 
+      after_body: config.file
+    navbar:
+      - { title: "Back to agenda", href: "index.html", align: right, icon: 'fa-undo'} 
+      - { title: "Sidebar", href: "javascript:togglediv('plots_sidebar')", align: right, icon: 'fa-align-justify' }
+      - { title: "Summary Statistics", href: "javascript:gotopage('models.html','#summary-statistics')", align: left}
+      - { title: "NONMEM Files", href: "javascript:gotopage('models.html','#input-and-output-files')", align: left}
+      - { title: "Graphs", href: "#", align: left}
+--- 
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+Column {.tabset data-width=200 data-icon="fa-list" #plots_sidebar}
+-----------------------------------------
+<center>Choose desired plots below</center>
+### 1  {#model1_plots_index}
+
+No selected plots. Select 1-3 models in the 'Summary Statistics' tab
+
+### 2 {#model2_plots_index}
+
+No selected plots
+
+### 3 {#model3_plots_index}
+
+No selected plots
+ 
+<!--START Include all decks from corresponding deck files
+`r deckfiles<-list.files(pattern = '.deck.Rmd') `
+
+```{r, child = deckfiles}
+```
+-->
+<!--END Include all decks from corresponding deck files-->
+
+
+
+### Model List {#model_all_plots_index}
+
+#### plot {#model01_graphs_links}
+
+```{r,child='includes/models/creator/model-01/list.Rmd'}
+```
+
+            
+#### plot {#model02_graphs_links}
+
+ 
+```{r,child='includes/models/creator/model-03/list.Rmd'}
+```
+
+
+
+#### plot {#model03_graphs_links}
+
+ 
+```{r,child='includes/models/creator/model-03/list.Rmd'}
+```
+
+
+#### NAN {#empty_graphs_links}
+
+
+Column {#model1_gr}
+-----------------------------------------------------------------------
+
+
+
+
+### Model 1: 
+
+<iframe id='model0_plots' width='100%' height='100%' border='0' src='includes/models/default_plot.html'></iframe>
+
+Column {#model2_gr}
+-----------------------------------------------------------------------
+
+
+
+
+### Model 2: 
+
+<iframe id='model1_plots' width='100%' height='100%' border='0' src='includes/models/default_plot.html'></iframe>
+
+Column {#model3_gr}
+-----------------------------------------------------------------------
+
+
+
+
+### Model 3: 
+
+<iframe id='model2_plots' width='100%' height='100%' border='0' src='includes/models/default_plot.html'></iframe>
+
+
