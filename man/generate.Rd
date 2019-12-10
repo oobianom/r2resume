@@ -30,6 +30,8 @@ this is set to site_libs.}
 \item{css}{Optional stlysheet name for further beautification of the resume site.
 Set by default to style.css. You may edit that file and its automatically reflected in
 the final outlook of your resume site.}
+
+\item{...}{Optional. Additional prarmeters for declaration in html_document}
 }
 \description{
 See the \href{https://www.r2resume.com}{Official R2RESUME
@@ -60,39 +62,9 @@ the user does not have to spend time doing it.
 }
 
 \examples{
-Example of the top of a single page resume with rmarkdown
-file temitope.Rmd
 \dontrun{
 
----
-title: "Official CV of Temitope Ajayi"
-author: "Temitope Ajayi, PhD, MD"
-email: "idonshayo-nonexist@buffalo.edu"
-position: "Research Assistant Professor"
-affiliation: "State University of New York at Buffalo"
-address: "45 Main Street, Buffalo, NY"
-date: "`r Sys.Date()`"
-phone: "716-000-0000"
-profile-image: "myself.jpg"
-theme-custom-color: "brown"
-bg-color: "default"
-output:
-    r2resume::generate:
-        template: "limon"
----
-
-body ...
-
-}
-Example for a multiple page site -  a typical _site.yml file
-
-\dontrun{
-
-exclude: [repo]
-output_dir: 'site'
-output:
-  r2resume::generate:
-     template: 'manzana'
+generate(self_contained = TRUE)
 
 }
 }

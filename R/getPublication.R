@@ -15,22 +15,19 @@
 #'
 #' Required
 #' Rtools  https://cran.rstudio.com/bin/windows/Rtools
+#' Rmarkdown
 #'
 #' @examples
-#' Example when calling this function within your document
 #' \dontrun{
 #'
-#' ```{r echo =FALSE}
-#' PMID <- c(31645732,31634902,31636404,31657530,31645761,31645758,31653761,31642025,31647023,31645452,31647500,27976715)
-#' ```
-#' `r RProfilesPackage::getPublication(PMID)`
+#' getPublication(PMID = c(546178,997076,988976))
 #'
 #' }
 #' @export
 #'
 
 
-getPublication<- function(PMID,...){
+getPublication<- function(PMID){
   con <-NULL
   PMID <-sort(PMID,decreasing = TRUE)
   for(i in PMID){
@@ -60,6 +57,9 @@ getPublication<- function(PMID,...){
     con <-c(con,content)
   }
   con <- paste(paste0(" - ",con),collapse='\n')
+
+  attr(con, "html") <- TRUE
+  class(con) <- c("html", "character")
 
   return(con)
 

@@ -4,7 +4,7 @@
 \alias{loadExamples}
 \title{R2RESUME: Converts Rmarkdown to Beautiful Resume Sites}
 \usage{
-loadExamples(template = "manzana", ...)
+loadExamples(template = "manzana")
 }
 \arguments{
 \item{template}{Default is the manzana, but you may declare a different template name
@@ -32,11 +32,9 @@ Load an example starter resume template
 }
 
 \examples{
-Example of calling this function within your document
 \dontrun{
 
-rmarkdown::loadExamples('naranja')
-
+loadExamples("naranja")
 
 }
 }

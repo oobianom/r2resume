@@ -6,13 +6,13 @@
 #'
 #' Load an example starter resume template
 #'
-#'@param template Default is the manzana, but you may declare a different template name
+#' @param template Default is the manzana, but you may declare a different template name
 #' for the final look of your resume site. The options include:
 #'
 #' manzana, limon, circuela, anana, naranja
 #'
 #'
-#'@section Brief:
+#' @section Brief:
 #'
 #'  When called, a new folder is created in your current directory and the requested example
 #'  is copied into this folder. Finally, a call is automatically made to render the template
@@ -21,21 +21,19 @@
 #'  To edit and further build the template, you may proceed into the directory and manipulate
 #'  the .Rmd files. You may also create other .Rmd files and it will be rendered simultaneously
 #'
-#'
 #' @examples
-#' Example of calling this function within your document
 #' \dontrun{
 #'
-#' rmarkdown::loadExamples('naranja')
-#'
+#' loadExamples("naranja")
 #'
 #' }
+#' @importFrom rstudioapi viewer
 #' @export
 #'
 
 
 
-loadExamples <- function(template='manzana',...){
+loadExamples <- function(template='manzana'){
   pkgloc = paste(find.package("r2resume"),"/examples/",sep = "")
   currdir = getwd()
   file_in_ex = paste(pkgloc,template,sep = "")
@@ -48,8 +46,8 @@ loadExamples <- function(template='manzana',...){
     #build the resume site and view
     indexrmd = "index.Rmd"
     if(file.exists(indexrmd)){
-      rmarkdown::render_site(".",encoding = "UTF-8")
-      rstudioapi::viewer('site/index.html',height = "maximize")
+      render_site(".",encoding = "UTF-8")
+      viewer('site/index.html',height = "maximize")
     }
     else{
       stop("The example may have not been copied appropriately. Please email idonshayo@gmail.com")

@@ -24,6 +24,7 @@
 #' folder will be generated. This is most important for rendering multiple pages simultaneously
 #' so that all pages only refer to the library as supposed to containing the full libraries
 #' within them.
+#'@param ... Optional. Additional prarmeters for declaration in html_document
 #'
 #'@section Usage and constituents:
 #'
@@ -40,48 +41,14 @@
 #'  After creating your pages, use the \code{rmarkdown::render('index.Rmd')} to build single page resume and
 #'  \code{rmarkdown::render_site('.')} to simulaneously build your multiple page resume site.
 #'
-#'
-#'
 #' @examples
-#' Example of the top of a single page resume with rmarkdown
-#' file temitope.Rmd
 #' \dontrun{
 #'
-#' ---
-#' title: "Official CV of Temitope Ajayi"
-#' author: "Temitope Ajayi, PhD, MD"
-#' email: "idonshayo-nonexist@buffalo.edu"
-#' position: "Research Assistant Professor"
-#' affiliation: "State University of New York at Buffalo"
-#' address: "45 Main Street, Buffalo, NY"
-#' date: "`r Sys.Date()`"
-#' phone: "716-000-0000"
-#' profile-image: "myself.jpg"
-#' theme-custom-color: "brown"
-#' bg-color: "default"
-#' output:
-#'     r2resume::generate:
-#'         template: "limon"
-#' ---
-#'
-#' body ...
+#' generate(self_contained = TRUE)
 #'
 #' }
+#' @importFrom htmltools htmlDependency
 #' @export
-#' @examples
-#' Example for a multiple page site -  a typical _site.yml file
-#'
-#' \dontrun{
-#'
-#' exclude: [repo]
-#' output_dir: 'site'
-#' output:
-#'   r2resume::generate:
-#'      template: 'manzana'
-#'
-#' }
-#' @export
-#'
 
 
 generate <- function(template='manzana',self_contained = FALSE,dir_lib ='site_libs',css = 'style.css',...){
@@ -96,7 +63,7 @@ generate <- function(template='manzana',self_contained = FALSE,dir_lib ='site_li
     extra_dependencies = list(rmarkdown::html_dependency_jquery(),
                               rmarkdown::html_dependency_jqueryui(),
                               rmarkdown::html_dependency_font_awesome(),
-                              htmltools::htmlDependency(
+                              htmlDependency(
                                 'RPPkg', '1.0',
                                 src=pkgloc,
                                 script = 'main.js',

@@ -100,7 +100,7 @@ Reports/Publication {data-format="publication"}
 PMID <- c(31645732,31634902,31636404,31657530,31645761,31645758,31653761,31642025,31647023,31645452,31647500,27976715)
 ```
 
-`r r2resume::getPublication(PMID)`
+`r RProfilesPackage::getPublication(PMID)`
 
 
 Presentations {data-format="publication" icon="fa-bullhorn"}

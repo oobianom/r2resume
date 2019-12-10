@@ -3,3 +3,6 @@
 export(generate)
 export(getPublication)
 export(loadExamples)
+import(rmarkdown)
+importFrom(htmltools,htmlDependency)
+importFrom(rstudioapi,viewer)

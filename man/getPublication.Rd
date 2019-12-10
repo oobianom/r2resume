@@ -4,7 +4,7 @@
 \alias{getPublication}
 \title{R2RESUME: Converts Rmarkdown to Beautiful Resume Sites}
 \usage{
-getPublication(PMID, ...)
+getPublication(PMID)
 }
 \arguments{
 \item{PMID}{Required. Enter one or multiple PMIDs.Ensure to concatenate the PMIDs.
@@ -15,7 +15,8 @@ In case you have many articles, you can quickly get a list of your PMID by selec
 Should you need assistance with this, shoot me a quick email at idonshayo at gmail.com
 
 Required
-Rtools  https://cran.rstudio.com/bin/windows/Rtools}
+Rtools  https://cran.rstudio.com/bin/windows/Rtools
+Rmarkdown}
 }
 \description{
 See the \href{https://www.r2resume.com}{Official R2RESUME
@@ -26,13 +27,9 @@ function.
 This function simply takes an input of one or multiple PMID(PUBMED ID)
 }
 \examples{
-Example when calling this function within your document
 \dontrun{
 
-```{r echo =FALSE}
-PMID <- c(31645732,31634902,31636404,31657530,31645761,31645758,31653761,31642025,31647023,31645452,31647500,27976715)
-```
-`r RProfilesPackage::getPublication(PMID)`
+getPublication(PMID = c(546178,997076,988976))
 
 }
 }
