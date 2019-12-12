@@ -56,9 +56,12 @@ getPublication<- function(PMID){
       }
     con <-c(con,content)
   }
-  con <- paste(paste0(" - ",con),collapse='\n')
+  con <- paste(paste0("<li>", con,"</li>"), collapse = "\n")
+
+  con <-paste0("<ul>",con,"</ul>")
 
   attr(con, "html") <- TRUE
+
   class(con) <- c("html", "character")
 
   return(con)
