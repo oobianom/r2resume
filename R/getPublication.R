@@ -17,6 +17,8 @@
 #' Rtools  https://cran.rstudio.com/bin/windows/Rtools
 #' Rmarkdown
 #'
+#' @import jsonlite
+#'
 #' @examples
 #' \dontrun{
 #'
@@ -30,31 +32,32 @@
 getPublication<- function(PMID){
   con <-NULL
   PMID <-sort(PMID,decreasing = TRUE)
-  for(i in PMID){
+  for(i in as.character(PMID)){
     content <-NULL
     if(!dir.exists("repo")){
       dir.create("repo")
     }
     fileName <- paste('repo/',i,'.pub.part',sep='')
-    ncbiweb <-'https://www.ncbi.nlm.nih.gov/pubmed/'
+    ncbiweb <-'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&api_key=23c7391a6bb5b5d8f1b18addfc0597f20809&id='
       if (!file.exists(fileName)) {
         linkurl <- paste(ncbiweb,i,sep='')
-        urlfile <- url(paste(ncbiweb,i,'?report=docsum&format=text',sep=''))
-        content <- readLines(urlfile,warn = FALSE)[-(1:3)]
-        content <- gsub('1: ','',paste(content[-(length(content))],collapse = ' '))
-        content <-strsplit(content,"\\. ")[[1]]
-        content <- paste("<div class='pub_top'><span class='pub_authors'>",content[1],
-                         "</span> <span class='pub_title'><a target='_blank' href='",linkurl,"'>",content[2],
-                         "</a></span> <span class='pub_journal'>",content[3],
-                         "</span> <span class='pub_pubvol'>",content[4],
+        urlfile <- url(linkurl)
+        content <- readLines(urlfile,warn = FALSE)
+        content2 <- jsonlite::fromJSON(content)
+        content3 <- content2$result
+        content4 <- content3[[as.character(i)]]
+        content5 <- paste("<div class='pub_tops'><span class='pub_authors'>",paste(content4$authors$name,collapse=", "),
+                         "</span> <span class='pub_title'><a target='_blank' href='https://pubmed.ncbi.nlm.nih.gov/",i,"'>",content4$title,
+                         "</a></span> <span class='pub_journal'>",content4$fulljournalname,
+                         "</span> <span class='pub_pubvol'>",content4$pubdate,";", content4$volume,"(",content4$issue,")</span>; <i class='pub_publoc'>",content4$elocationid,"</i></div>",
                          sep = "")
 
-        writeLines(content,fileName)
+        writeLines(content5,fileName)
       }
       else{
-        content = readLines(fileName,warn = FALSE)
+        content5 = readLines(fileName,warn = FALSE)
       }
-    con <-c(con,content)
+    con <-c(con,content5)
   }
   con <- paste(paste0("<li>", con,"</li>"), collapse = "\n")
 
