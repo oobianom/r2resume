@@ -39,7 +39,8 @@ getPublication<- function(PMID){
     }
     fileName <- paste('repo/',i,'.pub.part',sep='')
     ncbiweb <-'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&api_key=23c7391a6bb5b5d8f1b18addfc0597f20809&id='
-      if (!file.exists(fileName)) {
+    tryCatch({
+    if (!file.exists(fileName)) {
         linkurl <- paste(ncbiweb,i,sep='')
         urlfile <- url(linkurl)
         content <- readLines(urlfile,warn = FALSE)
@@ -58,6 +59,7 @@ getPublication<- function(PMID){
         content5 = readLines(fileName,warn = FALSE)
       }
     con <-c(con,content5)
+    },error = function(e){})
   }
   con <- paste(paste0("<li>", con,"</li>"), collapse = "\n")
 
