@@ -3,6 +3,7 @@
 
 ## An R package that converts rmarkdown to beautiful resume sites
 
+![](https://r2resumer.coursewhiz.org/img/logo.png)
 ![r2resume](https://r2resumer.coursewhiz.org/img/intro-img.png)
 
 Please visit https://r2resumer.coursewhiz.org/ or http://coursewhiz.org/mainsite/r2resume.html for complete information regarding this package.
@@ -25,6 +26,7 @@ library(r2resume)
 
 #Use - start with an example
 ##This copies the naranja resume template to your current directory
+##Other templates include - manzana, limon, circuela, anana, naranja
 
 loadExamples('naranja')
 
