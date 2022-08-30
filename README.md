@@ -19,6 +19,10 @@ library(devtools);
 
 install_github("oobianom/r2resume")
 
+#Load the library
+
+library(r2resume)
+
 #Use - start with an example
 ##This copies the naranja resume template to your current directory
 
