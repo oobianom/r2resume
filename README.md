@@ -7,6 +7,31 @@
 
 Please visit https://r2resumer.coursewhiz.org/ or http://coursewhiz.org/mainsite/r2resume.html for complete information regarding this package.
 
+# Installation and Use
+
+```{r}
+#You need the devtools package
+
+install.packages("devtools");
+library(devtools);
+
+#Install the r2resume package
+
+install_github("oobianom/r2resume")
+
+#Use - start with an example
+##This copies the naranja resume template to your current directory
+
+loadExamples('naranja')
+
+#Generate your resume website
+
+rmarkdown::render_site('.', encoding = 'UTF-8')
+
+```
+
+# Check out some example of the outputs
+
 ## Demo 1 produced by r2resume package
 [link to demo1](https://coursewhiz.org/r2resume/examples/naranja/index.html)
 
