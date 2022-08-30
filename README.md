@@ -1,9 +1,11 @@
+![](https://r2resumer.coursewhiz.org/img/logo.png)
+
 # r2resume 0.1 R package
  
 
 ## An R package that converts rmarkdown to beautiful resume sites
 
-![](https://r2resumer.coursewhiz.org/img/logo.png)
+
 ![r2resume](https://r2resumer.coursewhiz.org/img/intro-img.png)
 
 Please visit https://r2resumer.coursewhiz.org/ or http://coursewhiz.org/mainsite/r2resume.html for complete information regarding this package.
